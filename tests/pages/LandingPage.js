@@ -22,8 +22,15 @@ export class LandingPage {
     }
 
     async toastHaveText(message) {
-        await expect(this.page.locator('.toast')).toHaveText(message)
-        await expect(this.page.locator('.toast')).toBeHidden({ timeout: 5000 })
+        const toast = this.page.locator('.toast')
+
+        await expect(toast).toHaveText(message)
+        await expect(toast).not.toBeVisible({ timeout: 5000 })
+    }
+
+    async alertHaveText(target) {
+        await expect(this.page.locator('.alert')).toHaveText(target)
+
     }
 
 }
