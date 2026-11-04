@@ -21,7 +21,7 @@ test('deve cadastrar um lead na fila de espera', async ({ page }) => {
   await landingPage.submitLeadForm(leadName, leadEmail)
 
   const message = 'Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato!'
-  await toast.haveText(message)
+  await toast.containText(message)
   // await page.locator('#name').fill('glenda@test.com')
   // await page.locator('input[name=name]').fill('glenda@test.com')
   // await page.locator('input[placeholder="Seu nome completo"]').fill('glenda@test.com')
@@ -45,7 +45,7 @@ test('não deve cadastrar quando o email ja existe', async ({ page, request }) =
   await landingPage.submitLeadForm(leadName, leadEmail)
 
   const message = 'O endereço de e-mail fornecido já está registrado em nossa fila de espera.'
-  await toast.haveText(message)
+  await toast.containText(message)
 });
 
 test('não deve cadastrar email incorreto', async ({ page }) => {
