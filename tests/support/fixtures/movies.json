@@ -4,8 +4,8 @@
     "overview": "Um ex-investigador da ONU precisa encontrar a origem de uma epidemia que transforma pessoas em zumbis extremamente agressivos, enquanto tenta salvar a humanidade.",
     "company_id": "Paramount Pictures",
     "release_year": 2013,
-    "featured": false,
-    "cover": "/images/guerra-mundial-z.png"
+    "featured": true,
+    "cover": "wwz.png"
   },
   "madrugada_dos_mortos": {
     "title": "Madrugada dos Mortos",
@@ -13,7 +13,7 @@
     "company_id": "Universal Pictures",
     "release_year": 2004,
     "featured": false,
-    "cover": "/images/madrugada-dos-mortos.png"
+    "cover": "/covers/movies/madrugada.jpg"
   },
   "todo_mundo_quase_morto": {
     "title": "Todo Mundo Quase Morto",
@@ -21,7 +21,7 @@
     "company_id": "Universal Pictures",
     "release_year": 2004,
     "featured": false,
-    "cover": "/images/todo-mundo-quase-morto.png"
+    "cover": "/covers/movies/todo-mundo-quase-morto.png"
   },
   "a_noite_dos_mortos_vivos": {
     "title": "A Noite dos Mortos-Vivos",
@@ -29,7 +29,7 @@
     "company_id": "Continental Distributing",
     "release_year": 1968,
     "featured": false,
-    "cover": "/images/noite-dos-mortos-vivos.png"
+    "cover": "/covers/movies/noite-dos-mortos-vivos.png"
   },
   "despertar_dos_mortos": {
     "title": "Despertar dos Mortos",
@@ -37,7 +37,7 @@
     "company_id": "United Film Distribution Company",
     "release_year": 1978,
     "featured": false,
-    "cover": "/images/despertar-dos-mortos.png"
+    "cover": "/covers/movies/despertar-dos-mortos.png"
   },
   "exterminio": {
     "title": "Extermínio",
@@ -45,7 +45,7 @@
     "company_id": "Fox Searchlight Pictures",
     "release_year": 2002,
     "featured": false,
-    "cover": "/images/exterminio.png"
+    "cover": "/covers/movies/exterminio.png"
   },
   "exterminio_2": {
     "title": "Extermínio 2",
@@ -53,7 +53,7 @@
     "company_id": "20th Century Fox",
     "release_year": 2007,
     "featured": false,
-    "cover": "/images/exterminio-2.png"
+    "cover": "/covers/movies/exterminio-2.png"
   },
   "rec": {
     "title": "REC",
@@ -61,7 +61,7 @@
     "company_id": "Filmax",
     "release_year": 2007,
     "featured": false,
-    "cover": "/images/rec.png"
+    "cover": "/covers/movies/rec.png"
   },
   "invasao_zumbi": {
     "title": "Invasão Zumbi",
@@ -69,7 +69,7 @@
     "company_id": "Next Entertainment World",
     "release_year": 2016,
     "featured": false,
-    "cover": "/images/invasao-zumbi.png"
+    "cover": "/covers/movies/invasao-zumbi.png"
   },
   "zumbilandia": {
     "title": "Zumbilândia",
@@ -77,7 +77,7 @@
     "company_id": "Sony Pictures Releasing",
     "release_year": 2009,
     "featured": false,
-    "cover": "/images/zumbilandia.png"
+    "cover": "/covers/movies/zumbilandia.png"
   },
   "zumbilandia_atire_duas_vezes": {
     "title": "Zumbilândia: Atire Duas Vezes",
@@ -85,7 +85,7 @@
     "company_id": "Sony Pictures Releasing",
     "release_year": 2019,
     "featured": false,
-    "cover": "/images/zumbilandia-2.png"
+    "cover": "/covers/movies/zumbilandia-2.png"
   },
   "meu_namorado_e_um_zumbi": {
     "title": "Meu Namorado é um Zumbi",
@@ -93,7 +93,7 @@
     "company_id": "Lionsgate",
     "release_year": 2013,
     "featured": false,
-    "cover": "/images/meu-namorado-e-um-zumbi.png"
+    "cover": "/covers/movies/meu-namorado-e-um-zumbi.png"
   },
   "army_of_the_dead": {
     "title": "Army of the Dead: Invasão em Las Vegas",
@@ -101,7 +101,7 @@
     "company_id": "Netflix",
     "release_year": 2021,
     "featured": false,
-    "cover": "/images/army-of-the-dead.png"
+    "cover": "/covers/movies/army-of-the-dead.png"
   },
   "a_volta_dos_mortos_vivos": {
     "title": "A Volta dos Mortos-Vivos",
@@ -109,7 +109,7 @@
     "company_id": "Orion Pictures",
     "release_year": 1985,
     "featured": false,
-    "cover": "/images/volta-dos-mortos-vivos.png"
+    "cover": "/covers/movies/volta-dos-mortos-vivos.png"
   },
   "resident_evil_o_hospede_maldito": {
     "title": "Resident Evil: O Hóspede Maldito",
@@ -117,6 +117,6 @@
     "company_id": "Screen Gems",
     "release_year": 2002,
     "featured": false,
-    "cover": "/images/resident-evil.png"
+    "cover": "/covers/movies/resident-evil.png"
   }
 }
