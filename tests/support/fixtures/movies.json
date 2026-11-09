@@ -7,13 +7,13 @@
     "featured": true,
     "cover": "wwz.png"
   },
-  "madrugada_dos_mortos": {
+  "duplicate": {
     "title": "Madrugada dos Mortos",
     "overview": "Após uma epidemia zumbi devastar a humanidade, um grupo de sobreviventes busca abrigo em um shopping center enquanto tenta escapar dos mortos-vivos.",
     "company_id": "Universal Pictures",
     "release_year": 2004,
     "featured": false,
-    "cover": "/covers/movies/madrugada.jpg"
+    "cover": "madrugada.jpg"
   },
   "todo_mundo_quase_morto": {
     "title": "Todo Mundo Quase Morto",
