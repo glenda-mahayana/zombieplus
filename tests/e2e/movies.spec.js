@@ -6,7 +6,7 @@ const { executeSQL } = require('../support/database');
 test('deve poder cadastrar um novo filme', async ({ page }) => {
     const movies = data.create
     await executeSQL(`DELETE FROM movies WHERE title = '${movies.title}';`)
-    
+
     await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin');
     await page.movies.create(movies.title, movies.overview, movies.company_id, movies.release_year, movies.cover, movies.featured);
     await page.popup.haveText(`O filme '${movies.title}' foi adicionado ao catálogo.`)
@@ -46,4 +46,20 @@ test('não deve cadastrar quando os campos obrigatórios não são preenchidos',
         'Campo obrigatório',
         'Campo obrigatório'
     ])
+})
+
+test('deve realizar busca pelo termo zumbi', async ({ page, request }) => {
+    const movies = data.search
+    for (const movie of movies.data) {
+        await executeSQL(`DELETE FROM movies WHERE title = '${movie.title}';`);
+    }
+
+    movies.data.forEach(async (m) => {
+        await request.api.postMovie(m);
+    })
+
+    await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin');
+    await page.movies.search(movies.input);
+    await page.movies.tableHave(movies.output);
+
 })

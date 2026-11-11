@@ -1,7 +1,9 @@
 const { test, expect } = require('../support');
 const { faker } = require('@faker-js/faker');
+const { executeSQL } = require('../support/database');
 
 test('deve cadastrar um lead na fila de espera', async ({ page }) => {
+  await executeSQL(`DELETE FROM leads`)
   const leadName = faker.person.fullName();
   const leadEmail = faker.internet.email();
   
@@ -17,6 +19,7 @@ test('deve cadastrar um lead na fila de espera', async ({ page }) => {
 });
 
 test('não deve cadastrar quando o email ja existe', async ({ page, request }) => {
+  await executeSQL(`DELETE FROM leads`)
   const leadName = faker.person.fullName();
   const leadEmail = faker.internet.email();
 
@@ -38,6 +41,7 @@ test('não deve cadastrar quando o email ja existe', async ({ page, request }) =
 });
 
 test('não deve cadastrar email incorreto', async ({ page }) => {
+  await executeSQL(`DELETE FROM leads`)
   await page.leads.visit()
   await page.leads.openLeadModal()
   await page.leads.submitLeadForm('Glenda Rodrigues', 'glendatest.com.br')
@@ -46,6 +50,7 @@ test('não deve cadastrar email incorreto', async ({ page }) => {
 });
 
 test('não deve cadastrar quando o nome não é preenchido', async ({ page }) => {
+  await executeSQL(`DELETE FROM leads`)
   await page.leads.visit()
   await page.leads.openLeadModal()
   await page.leads.submitLeadForm('', 'glenda@test.com')
@@ -55,6 +60,7 @@ test('não deve cadastrar quando o nome não é preenchido', async ({ page }) =>
 });
 
 test('não deve cadastrar quando o email não é preenchido', async ({ page }) => {
+  await executeSQL(`DELETE FROM leads`)
   await page.leads.visit()
   await page.leads.openLeadModal()
   await page.leads.submitLeadForm('Glenda Rodrigues', '')
@@ -64,6 +70,7 @@ test('não deve cadastrar quando o email não é preenchido', async ({ page }) =
 });
 
 test('não deve cadastrar quando nenhum campo é preenchido', async ({ page }) => {
+  await executeSQL(`DELETE FROM leads`)
   await page.leads.visit()
   await page.leads.openLeadModal()
   await page.leads.submitLeadForm('', '')

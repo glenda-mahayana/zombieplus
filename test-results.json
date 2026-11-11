@@ -1,0 +1,811 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\QAx\\projects\\zombieplus\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\QAx\\projects\\zombieplus\\playwright.config.js",
+    "rootDir": "C:/QAx/projects/zombieplus/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 9
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/QAx/projects/zombieplus/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 9
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/QAx/projects/zombieplus/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\QAx\\projects\\zombieplus\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 9
+        },
+        "name": "chromium",
+        "testDir": "C:\\QAx\\projects\\zombieplus\\tests",
+        "snapshotDir": "C:\\QAx\\projects\\zombieplus\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "trace": "on-first-retry",
+          "screenshot": "only-on-failure",
+          "baseURL": "http://localhost:3000",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 9,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e\\leads.spec.js",
+      "file": "e2e/leads.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "deve cadastrar um lead na fila de espera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1595,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:21.081Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f00ae49f0a4749ec9e1c-2ea86b2fc69944d7d0e2",
+          "file": "e2e/leads.spec.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "não deve cadastrar quando o email ja existe",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 6692,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.swal2-html-container')\nExpected: \u001b[32m\"\u001b[7mVerificamos que o endereço de e-mail fornecido já consta em nossa lista de espera. Isso signific\u001b[27ma qu\u001b[7me você est\u001b[27má \u001b[7mu\u001b[27mm \u001b[7mpasso mais perto de aproveitar nossos serviços\u001b[27m.\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mAgradecemos por compartilhar seus dados conosco. Em breve, noss\u001b[27ma \u001b[7me\u001b[27mqu\u001b[7mipe entrar\u001b[27má \u001b[7me\u001b[27mm \u001b[7mcontato\u001b[27m.\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.swal2-html-container') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.swal2-html-container')\u001b[22m\n\u001b[2m    14 × locator resolved to <div id=\"swal2-html-container\" class=\"swal2-html-container\">Agradecemos por compartilhar seus dados conosco. …</div>\u001b[22m\n\u001b[2m       - unexpected value \"Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato.\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.swal2-html-container')\nExpected: \u001b[32m\"\u001b[7mVerificamos que o endereço de e-mail fornecido já consta em nossa lista de espera. Isso signific\u001b[27ma qu\u001b[7me você est\u001b[27má \u001b[7mu\u001b[27mm \u001b[7mpasso mais perto de aproveitar nossos serviços\u001b[27m.\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mAgradecemos por compartilhar seus dados conosco. Em breve, noss\u001b[27ma \u001b[7me\u001b[27mqu\u001b[7mipe entrar\u001b[27má \u001b[7me\u001b[27mm \u001b[7mcontato\u001b[27m.\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.swal2-html-container') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.swal2-html-container')\u001b[22m\n\u001b[2m    14 × locator resolved to <div id=\"swal2-html-container\" class=\"swal2-html-container\">Agradecemos por compartilhar seus dados conosco. …</div>\u001b[22m\n\u001b[2m       - unexpected value \"Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato.\"\u001b[22m\n\n    at Popup.haveText (C:\\QAx\\projects\\zombieplus\\tests\\support\\actions\\Components.js:10:31)\n    at C:\\QAx\\projects\\zombieplus\\tests\\e2e\\leads.spec.js:40:20",
+                    "location": {
+                      "file": "C:\\QAx\\projects\\zombieplus\\tests\\support\\actions\\Components.js",
+                      "column": 31,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msupport\\actions\\Components.js:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m     \u001b[36masync\u001b[39m haveText(message) {\n \u001b[90m  9 |\u001b[39m         \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.swal2-html-container'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(element)\u001b[33m.\u001b[39mtoHaveText(message)\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \n \u001b[90m 12 |\u001b[39m     }\n \u001b[90m 13 |\u001b[39m }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\QAx\\projects\\zombieplus\\tests\\support\\actions\\Components.js",
+                        "column": 31,
+                        "line": 10
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.swal2-html-container')\nExpected: \u001b[32m\"\u001b[7mVerificamos que o endereço de e-mail fornecido já consta em nossa lista de espera. Isso signific\u001b[27ma qu\u001b[7me você est\u001b[27má \u001b[7mu\u001b[27mm \u001b[7mpasso mais perto de aproveitar nossos serviços\u001b[27m.\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mAgradecemos por compartilhar seus dados conosco. Em breve, noss\u001b[27ma \u001b[7me\u001b[27mqu\u001b[7mipe entrar\u001b[27má \u001b[7me\u001b[27mm \u001b[7mcontato\u001b[27m.\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.swal2-html-container') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.swal2-html-container')\u001b[22m\n\u001b[2m    14 × locator resolved to <div id=\"swal2-html-container\" class=\"swal2-html-container\">Agradecemos por compartilhar seus dados conosco. …</div>\u001b[22m\n\u001b[2m       - unexpected value \"Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato.\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39msupport\\actions\\Components.js:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m     \u001b[36masync\u001b[39m haveText(message) {\n \u001b[90m  9 |\u001b[39m         \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.swal2-html-container'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(element)\u001b[33m.\u001b[39mtoHaveText(message)\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \n \u001b[90m 12 |\u001b[39m     }\n \u001b[90m 13 |\u001b[39m }\u001b[0m\n\u001b[2m    at Popup.haveText (C:\\QAx\\projects\\zombieplus\\tests\\support\\actions\\Components.js:10:31)\u001b[22m\n\u001b[2m    at C:\\QAx\\projects\\zombieplus\\tests\\e2e\\leads.spec.js:40:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:20.921Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\QAx\\projects\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-quando-o-email-ja-existe-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\QAx\\projects\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-quando-o-email-ja-existe-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\QAx\\projects\\zombieplus\\tests\\support\\actions\\Components.js",
+                    "column": 31,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f00ae49f0a4749ec9e1c-2bf55e5e5b59db717bf7",
+          "file": "e2e/leads.spec.js",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "não deve cadastrar email incorreto",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1496,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:20.929Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f00ae49f0a4749ec9e1c-c42cb6e2f7dcbce2ce7c",
+          "file": "e2e/leads.spec.js",
+          "line": 43,
+          "column": 1
+        },
+        {
+          "title": "não deve cadastrar quando o nome não é preenchido",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 1365,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:20.900Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f00ae49f0a4749ec9e1c-6aa51fad652f8c9c395f",
+          "file": "e2e/leads.spec.js",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "não deve cadastrar quando o email não é preenchido",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 1449,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:20.982Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f00ae49f0a4749ec9e1c-6bf8fb5267c15c54412f",
+          "file": "e2e/leads.spec.js",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "não deve cadastrar quando nenhum campo é preenchido",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 1458,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:21.019Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f00ae49f0a4749ec9e1c-0515f7c862e0e94d444f",
+          "file": "e2e/leads.spec.js",
+          "line": 72,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e\\login.spec.js",
+      "file": "e2e/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "deve logar como administrador",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 1136,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:20.719Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ce46b734337c02890a88-8a04b7407868645b431f",
+          "file": "e2e/login.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "não deve logar com senha incorreta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 1228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:20.697Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ce46b734337c02890a88-ba29f394c5d14db364b1",
+          "file": "e2e/login.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "não deve logar quando o email é inválido",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 8,
+                  "status": "passed",
+                  "duration": 1157,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:20.745Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ce46b734337c02890a88-000c194ab65eafb317aa",
+          "file": "e2e/login.spec.js",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "não deve logar quando o email não é preenchido",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 1004,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:22.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ce46b734337c02890a88-fe6f0a3d12f86cc87a70",
+          "file": "e2e/login.spec.js",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "não deve logar quando a senha não é preenchida",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 8,
+                  "status": "passed",
+                  "duration": 1034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:22.078Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ce46b734337c02890a88-0bfbaae1783cd18e0795",
+          "file": "e2e/login.spec.js",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "não deve logar quando nenhum campo é preenchido",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 1022,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:22.096Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ce46b734337c02890a88-2b950e4be201309530f7",
+          "file": "e2e/login.spec.js",
+          "line": 35,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e\\movies.spec.js",
+      "file": "e2e/movies.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "deve poder cadastrar um novo filme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 1453,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    },
+                    {
+                      "text": "Valor recebido: wwz.png\n"
+                    },
+                    {
+                      "text": "Caminho completo: tests/support/fixtures/movies/wwz.png\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:22.478Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "797174722980718f137c-669d86aecbda6df8aec7",
+          "file": "e2e/movies.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "deve poder remover um filme",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1209,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:22.626Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "797174722980718f137c-41bfc27a3c79b18837bc",
+          "file": "e2e/movies.spec.js",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "não deve cadastrar quando o titulo é duplicado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 1475,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    },
+                    {
+                      "text": "Valor recebido: madrugada.jpg\n"
+                    },
+                    {
+                      "text": "Caminho completo: tests/support/fixtures/movies/madrugada.jpg\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:22.641Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "797174722980718f137c-09db7577c6e272f69fd7",
+          "file": "e2e/movies.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "não deve cadastrar quando os campos obrigatórios não são preenchidos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 1036,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:22.681Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "797174722980718f137c-a0ab3a62f9dd674d6140",
+          "file": "e2e/movies.spec.js",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "deve realizar busca pelo termo zumbi",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1033,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[]\n"
+                    },
+                    {
+                      "text": "[]\n"
+                    },
+                    {
+                      "text": "[]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T23:26:22.944Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "797174722980718f137c-8e83bd1b301bff190cd4",
+          "file": "e2e/movies.spec.js",
+          "line": 51,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-11T23:26:19.936Z",
+    "duration": 7971.857000000001,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
