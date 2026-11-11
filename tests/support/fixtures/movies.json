@@ -15,13 +15,13 @@
     "featured": false,
     "cover": "madrugada.jpg"
   },
-  "todo_mundo_quase_morto": {
+  "to_remove": {
     "title": "Todo Mundo Quase Morto",
     "overview": "Shaun é um homem comum que precisa enfrentar um apocalipse zumbi enquanto tenta reconquistar sua namorada e proteger seus amigos e familiares.",
     "company_id": "Universal Pictures",
     "release_year": 2004,
     "featured": false,
-    "cover": "/covers/movies/todo-mundo-quase-morto.png"
+    "cover": "mortos-vivos.jpg"
   },
   "a_noite_dos_mortos_vivos": {
     "title": "A Noite dos Mortos-Vivos",
